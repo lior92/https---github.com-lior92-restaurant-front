@@ -1,0 +1,234 @@
+.home_container {
+  width: 100%;
+}
+
+/* About section */
+
+.about {
+  padding: 50px 0;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about h2 {
+  font-size: 2.3rem;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #555;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.about .small {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.about-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-img img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+  /* Shadow */
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query About section */
+
+@media only screen and (max-width: 530px) {
+  .about {
+    padding: 0px !important;
+  }
+
+  .about h2 {
+    font-size: 1.3rem;
+  }
+  .about p {
+    font-size: 0.8rem;
+  }
+
+  .about-img img {
+    height: 300px;
+  }
+  .food h2 {
+    font-size: 1.5rem !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .about h2 {
+    font-size: 1.1rem;
+  }
+}
+
+/* About // */
+
+/* Food */
+
+.food {
+  padding: 1rem 0 4rem 0;
+}
+
+.food h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #555;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Victor Mono", monospace;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.food-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-container img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img_container {
+  margin: 0 1rem;
+  position: relative;
+  flex: 1 1 100%;
+}
+
+.img_content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.img_content h3 {
+  color: #ffffff;
+  font-size: 2.2rem;
+}
+
+.img_content a {
+  font-size: 1.2rem;
+  color: #919090;
+}
+.img_content a:hover {
+  color: #ffffff;
+}
+
+.img_container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.871);
+  opacity: 0;
+  z-index: 1;
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.img_container:hover::after {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.img_container:hover .img_content {
+  opacity: 1;
+  top: 40%;
+}
+
+/* Media query Dishes */
+@media only screen and (max-width: 770px) {
+  .food-container {
+    flex-direction: column;
+  }
+
+  .img_container {
+    margin: 1rem 0;
+  }
+  .food h2 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 991px) {
+  .food {
+    padding-top: 10%;
+  }
+  .img_content h3 {
+    color: #fff;
+    font-size: 30px;
+  }
+  .img_content a {
+    font-size: 16px;
+  }
+  .food h2 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .img_content h3 {
+    color: #fff;
+    font-size: 30px;
+  }
+  .img_content a {
+    font-size: 16px;
+  }
+  .food {
+    padding-top: 20%;
+  }
+  .food h2 {
+    font-size: 30px;
+  }
+}

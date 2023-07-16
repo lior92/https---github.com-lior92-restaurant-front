@@ -1,0 +1,45 @@
+
+  /* Top Image */
+  .background_image_container {
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .background_image_container img {
+    width: 100%;
+ 
+  }
+
+  /* Menu container */
+.menu_container a{
+ font-family: 'Ysabeau Infant', sans-serif;
+    color: #642323;
+    font-weight: 800;
+}
+
+/* Menu content */
+
+.menu_content{
+
+margin: 80px 50px 30px 50px;
+}
+
+/* Dish */
+
+.dish_container{
+    margin-bottom: 4%;
+}
+
+.dish_title{
+    margin: 3%;
+    color: #642323;
+     font-family: 'Ysabeau Infant', sans-serif;
+}
+.dish_description{
+    margin: 3%;
+     font-family: 'Ysabeau Infant', sans-serif;
+}

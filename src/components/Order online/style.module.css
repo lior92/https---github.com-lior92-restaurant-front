@@ -1,0 +1,82 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Ysabeau Infant', sans-serif;
+}
+.price{
+  font-weight: 500;
+  padding: 2%;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 610px) {
+  .categories {
+    justify-content: flex-start;
+  }
+}
+
+
+.categories button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #eee;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.categories button:hover {
+  background-color: #ccc;
+}
+
+.activeCategory {
+  background-color: #ccc;
+}
+
+.gridContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  
+}
+
+.cardImage {
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Ysabeau Infant', sans-serif;
+}
+.cardBody div{
+font-weight: 900;
+}
+
+

@@ -1,0 +1,36 @@
+.empty_cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.cart_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+}
+.cart_container h2{
+  font-family: 'Ysabeau Infant', sans-serif;
+}
+
+/* Media query */
+
+@media screen and (max-width: 450px) {
+  .cart_container {
+    font-size: 16px;
+  }
+}
+
+.price{
+    font-weight: 500;
+}
+
+.total_price {
+  padding: 3%;
+  font-weight: 700;
+}
