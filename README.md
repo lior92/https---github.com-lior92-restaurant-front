@@ -45,6 +45,13 @@ This project utilizes the following technologies:
 - React Router: Library for routing in a React application.
 - React Bootstrap: UI library specifically designed for React applications.
 
+## Back-End Project
+
+The back-end project for the Restaurant website can be found in the following repository: [Restaurant Backend](https://github.com/lior92/restaurant-back-end)
+
+## Deployment
+
+The Restaurant Front-End project has been deployed and is available at the following live site: [Restaurant Live Site](https://lior92-restaurant.surge.sh/order_online)
 
 
 ## Contributing
